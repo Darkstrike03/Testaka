@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akashic Records</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header1: Main header -->
+    <header class="header1">
+        <div class="container">
+            <div class="logo">
+                <img src="coo.png" alt="Akashic Records Logo">
+                <span>Akashic Records</span>
+            </div>
+            <button id="authButton" class="auth-btn" onclick="redirectToLogin()">Sign In/Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Divider line -->
+    <hr class="divider">
+
+    <!-- Header2: Sub header -->
+    <header class="header2">
+        <div class="container">
+            <button class="home-btn" onclick="goToHome()">Home</button>
+            <button class="tab-btn active" id="novelTab" onclick="goToNovel()">Novel</button>
+            <button class="tab-btn" id="postTab" onclick="goToPost()">Post</button>
+        </div>
+    </header>
+
+    <!-- Body Section (Blank for now) -->
+    <main class="content">
+        <!-- Future content will go here -->
+         <!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-slide">
+        <!-- First novel ad -->
+        <div class="hero-item active">
+            <img src="timepass.png" alt="Aanovel Image" class="hero-background"> <!-- Placeholder image for aanovel -->
+            <div class="hero-content">
+                <h2>Aanovel</h2>
+                <p>This is an ad</p>
+            </div>
+        </div>
+
+        <!-- Second novel ad -->
+        <div class="hero-item">
+            <img src="timepass.png" alt="Novelaa2 Image" class="hero-background"> <!-- Placeholder image for novelaa2 -->
+            <div class="hero-content">
+                <h2>Novelaa2</h2>
+                <p>This is good</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-item');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if(i === index){
+                slide.classList.add('active');
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 3000);
+    showSlide(currentSlide);
+</script>
+<!-- Main Content Area -->
+<div class="main-content">
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Fantasy</a></li>
+            <li><a href="#">Romance</a></li>
+            <li><a href="#">Adventure</a></li>
+            <li><a href="#">Mystery</a></li>
+            <li><a href="#">Sci-Fi</a></li>
+            <li><a href="#">Horror</a></li>
+        </ul>
+    </aside>
+
+    <!-- Middle Section (currently blank) -->
+    <section class="middle-section">
+        <!-- Content will be added here later -->
+    </section>
+    <!-- Middle Section -->
+<section class="middle-section">
+    <h2>Featured Novels</h2>
+    <div class="featured-novels">
+        <div class="novel-card">
+            <a href="novel1.html">
+                <img src="path/to/novel1.jpg" alt="Novel Title 1">
+                <h3>Novel Title 1</h3>
+            </a>
+        </div>
+        <div class="novel-card">
+            <a href="novel2.html">
+                <img src="path/to/novel2.jpg" alt="Novel Title 2">
+                <h3>Novel Title 2</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+        <h3>Recently Updated Novels</h3>
+        <ul>
+            <li><a href="#">Novel Title 1</a> - Updated 1 hour ago</li>
+            <li><a href="#">Novel Title 2</a> - Updated 3 hours ago</li>
+            <li><a href="#">Novel Title 3</a> - Updated 5 hours ago</li>
+            <li><a href="#">Novel Title 4</a> - Updated 2 days ago</li>
+        </ul>
+    </aside>
+</div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="coo.png" alt="Akashic Records Logo">
+                <span>Akashic Records</span>
+                <p>Unlocking Infinite Stories</p>
+            </div>
+            <div class="genres">
+                <ul>
+                    <li>Josei</li>
+                    <li>Comedy</li>
+                    <li>Romance</li>
+                    <!-- Add more genres here -->
+                </ul>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <p>&copy; 2024 Akashic Records. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
