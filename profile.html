@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="akstyles.css">
+</head>
+<body>
+
+<header class="header1">
+    <div class="container">
+        <div class="logo">
+            <img src="coo.png" alt="Akashic Records Logo">
+            <span>Akashic Records</span>
+        </div>
+        <img id="profileIcon" src="profilepic.png" alt="Profile Icon" class="profile-icon">
+    </div>
+</header>
+<hr class="divider">
+<header class="header2">
+    <div class="container">
+        <button class="home-btn" onclick="goToHome()">Back</button>
+    </div>
+</header>
+
+<main class="profile-container">
+    <div class="profile-info-left">
+        <img src="profilepic.png" alt="Profile Picture" class="profile-avatar">
+        <p>Username: <span id="username">User123</span></p>
+        <button class="btn" onclick="editProfile()">Edit Profile</button>
+    </div>
+
+    <!-- Stats box -->
+    <div class="profile-stats">
+        <div class="stat-item" onclick="goToContinueReading()">
+            <span class="stat-number">5</span>
+            <p>Continue Reading</p>
+        </div>
+        <div class="stat-item" onclick="goToPosts()">
+            <span class="stat-number">12</span>
+            <p>Posts</p>
+        </div>
+        <div class="stat-item" onclick="goToComments()">
+            <span class="stat-number">30</span>
+            <p>Comments</p>
+        </div>
+        <div class="stat-item" onclick="goToSaved()">
+            <span class="stat-number">8</span>
+            <p>Saved</p>
+        </div>
+        <div class="stat-item" onclick="goToBookmarks()">
+            <span class="stat-number">14</span>
+            <p>Bookmarks</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Akashic Records. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="akscript.js"></script>
+</body>
+</html>
