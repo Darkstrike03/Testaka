@@ -2,13 +2,16 @@
 function redirectToLogin() {
     window.location.href = 'login.html'; // Replace 'login.html' with the actual login page URL
 }
+function editProfile() {
+    alert("Edit Profile functionality coming soon!");
+}
 
 // Function to redirect to the Home page or refresh if already on it
 function goToHome() {
     if (window.location.pathname.endsWith('akindex.html')) {
         window.location.reload();  // Refresh the page if already on the home page
     } else {
-        window.location.href = 'akindex.html';  // Redirect to the home page
+        window.location.href = 'index.html';  // Redirect to the home page
     }
 }
 
