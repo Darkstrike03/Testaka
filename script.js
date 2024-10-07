@@ -2,9 +2,6 @@
 function redirectToLogin() {
     window.location.href = 'login.html'; // Replace 'login.html' with the actual login page URL
 }
-function redirectToProfile() {
-    window.location.href = 'profile.html'; // Replace 'login.html' with the actual login page URL
-}
 function editProfile() {
     alert("Edit Profile functionality coming soon!");
 }
