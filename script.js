@@ -14,7 +14,9 @@ function goToHome() {
         window.location.href = 'index.html';  // Redirect to the home page
     }
 }
-
+function goToProfile() {
+    window.location.href = 'testaupro.html';
+}
 // Function to redirect to the Novel page
 function goToNovel() {
     window.location.href = 'novels.html'; // Replace with the actual Novel section link
