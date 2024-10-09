@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autho Profile</title>
+    <link rel="stylesheet" href="author-styles.css">
+</head>
+<body>
+
+<header class="header1">
+    <div class="container">
+        <div class="logo">
+            <img src="coo.png" alt="Akashic Records Logo">
+            <span>Akashic Records</span>
+        </div>
+        <img id="profileIcon" src="profilepic.png" alt="Profile Icon" class="profile-icon">
+    </div>
+</header>
+<hr class="divider">
+<header class="header2">
+    <div class="container">
+        <button class="home-btn" onclick="goToHome()">Back</button>
+        <button class="home-btn" onclick="goToBack()">General profile</button>
+    </div>
+</header>
+
+<!-- Author Hero Section -->
+<div class="author-hero">
+    <img src="timepass.png" alt="Author Banner" class="author-banner">
+    <img src="profilepic.png" alt="Profile Picture" class="profile-avatar-large">
+    <h1>Author123</h1>
+    <p>Bestselling Author of [Book Name]</p>
+</div>
+
+<!-- Profile Info and Stats -->
+<main class="profile-container">
+    <div class="profile-info-left">
+        <p>Author-id: <span id="username">Author123</span></p>
+        <button class="profile-btn" onclick="editProfile()">Edit Profile</button>
+    </div>
+
+    <!-- Stats box -->
+    <div class="profile-stats">
+        <div class="stat-item" onclick="goToContinueReading()">
+            <span class="stat-number">5</span>
+            <p>Continue Writing</p>
+        </div>
+        <div class="stat-item" onclick="goToPosts()">
+            <span class="stat-number">12</span>
+            <p>Posts</p>
+        </div>
+        <div class="stat-item" onclick="goToComments()">
+            <span class="stat-number">30</span>
+            <p>Comments</p>
+        </div>
+        <div class="stat-item" onclick="goToSaved()">
+            <span class="stat-number">8</span>
+            <p>Saved</p>
+        </div>
+        <div class="stat-item" onclick="goToBookmarks()">
+            <span class="stat-number">14</span>
+            <p>Bookmarks</p>
+        </div>
+    </div>
+
+    <!-- Author Bio Section -->
+    <div class="author-bio">
+        <h2>About the Author</h2>
+        <p>Author123 is a bestselling author known for their captivating novels in the fantasy and adventure genres. With over a million readers, they have transformed the world of web novels.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Akashic Records. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="author-script.js"></script>
+</body>
+</html>
