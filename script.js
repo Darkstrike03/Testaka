@@ -15,7 +15,7 @@ function goToHome() {
     }
 }
 function goToProfile() {
-    window.location.href = 'testaupro.html';
+    window.location.href = 'author-profile.html';
 }
 // Function to redirect to the Novel page
 function goToNovel() {
