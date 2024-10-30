@@ -136,6 +136,24 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+.theme-toggle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #ddd;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 90px; /* Adjust position to place it beside the signup button */
+}
+
+.theme-toggle.dark-mode {
+    background-color: #333;
+    color: #ddd;
+}
 
 /* Divider line */
 .divider {
