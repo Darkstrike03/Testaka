@@ -154,6 +154,22 @@ body {
     background-color: #333;
     color: #ddd;
 }
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Adjust other elements as needed for dark mode */
+.header1, .header2, .footer, .left-sidebar, .right-sidebar, .middle-section {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+/* Links */
+a {
+    color: #f0a500; /* Example color for dark mode links */
+}
+
 
 /* Divider line */
 .divider {
