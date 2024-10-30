@@ -17,11 +17,8 @@
         <div class="container">
             <div class="logo">
                 <img src="assets/coo.png" alt="Akashic Records Logo">
-                <span>Akashic Records</span>
-            </div>
-            <a href="profile.html">
-                <button>PROFILE</button>
-            </a>    
+                <span>Akashic Records</span>   
+            <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()">🌞</button>    
             <button id="authButton" class="auth-btn" onclick="redirectToLogin()">Sign In/Sign Up</button>
         </div>
     </header>
@@ -46,19 +43,19 @@
     <div class="hero-slide">
         <!-- First novel ad -->
         <div class="hero-item active">
-            <img src="assets/timepass.png" alt="Aanovel Image" class="hero-background"> <!-- Placeholder image for aanovel -->
+            <img src="assets/timepass.png" alt="Default Image" class="hero-background"> <!-- Placeholder image for aanovel -->
             <div class="hero-content">
-                <h2>Aanovel</h2>
-                <p>This is an ad</p>
+                <h2>Default</h2>
+                <p>This is an Default</p>
             </div>
         </div>
 
         <!-- Second novel ad -->
         <div class="hero-item">
-            <img src="assets/timepass2.jpg" alt="Novelaa2 Image" class="hero-background"> <!-- Placeholder image for novelaa2 -->
+            <img src="assets/timepass2.jpg" alt="Default Image" class="hero-background"> <!-- Placeholder image for novelaa2 -->
             <div class="hero-content">
-                <h2>Novelaa2</h2>
-                <p>This is good</p>
+                <h2>Default</h2>
+                <p>This is an Default</p>
             </div>
         </div>
     </div>
@@ -90,12 +87,35 @@
     <aside class="left-sidebar">
         <h3>Categories</h3>
         <ul>
-            <li><a href="#">Fantasy</a></li>
-            <li><a href="#">Romance</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Adult</a></li>
             <li><a href="#">Adventure</a></li>
-            <li><a href="#">Mystery</a></li>
-            <li><a href="#">Sci-Fi</a></li>
+            <li><a href="#">BL</a></li>
+            <li><a href="#">Comedy</a></li>
+            <li><a href="#">Drama</a></li>
+            <li><a href="#">Eastern</a></li>
+            <li><a href="#">Eastern</a></li>
+            <li><a href="#">Ecchi</a></li>
+            <li><a href="#">Exclusive</li>
+            <li><a href="#">Fantasy</a>
+            <li><a href="#">Game</a></li>
+            <li><a href="#">Gender bender</a></li>
+            <li><a href="#">Harem</a></li>
+            <li><a href="#">Historical</a></li>
             <li><a href="#">Horror</a></li>
+            <li><a href="#">Josei</a></li>
+            <li><a href="#">Mature</a></li>
+            <li><a href="#">Mecha</a></li>
+            <li><a href="#">Mystery</a></li>
+            <li><a href="#">psychological</a></li>
+            <li><a href="#">Reincarnation</a></li>
+            <li><a href="#">Romance</a></li>
+            <li><a href="#">School Life</a></li>
+            <li><a href="#">SCi-fi</a></li>
+            <li><a href="#">Slice of life</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Supernatural</a></li>
+            <li><a href="#">Tragedy</a></li>
         </ul>
     </aside>
 
@@ -109,14 +129,14 @@
     <div class="featured-novels">
         <div class="novel-card">
             <a href="novel1.html">
-                <img src="path/to/novel1.jpg" alt="Novel Title 1">
-                <h3>Novel Title 1</h3>
+                <img src="assets/novel1.jpg" alt="Novel Title 1">
+                <h3>Deafult</h3>
             </a>
         </div>
         <div class="novel-card">
             <a href="novel2.html">
-                <img src="path/to/novel2.jpg" alt="Novel Title 2">
-                <h3>Novel Title 2</h3>
+                <img src="assets/novel2.jpg" alt="Novel Title 2">
+                <h3>Default</h3>
             </a>
         </div>
     </div>
@@ -127,10 +147,13 @@
     <aside class="right-sidebar">
         <h3>Recently Updated Novels</h3>
         <ul>
-            <li><a href="#">Novel Title 1</a> - Updated 1 hour ago</li>
-            <li><a href="#">Novel Title 2</a> - Updated 3 hours ago</li>
-            <li><a href="#">Novel Title 3</a> - Updated 5 hours ago</li>
-            <li><a href="#">Novel Title 4</a> - Updated 2 days ago</li>
+            <div class="recently-uploaded">
+                 <div class="novel">
+                  <li><a href="#">Default</li>
+                  <p class="update-time" data-updated="2024-10-28T14:00:00">Updated just now</p>
+                   </div>
+  <!-- Add more novels here -->
+                   </div>
         </ul>
     </aside>
 </div>
